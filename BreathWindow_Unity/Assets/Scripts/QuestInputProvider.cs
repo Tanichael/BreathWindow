@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class QuestInputProvider : IInputProvider
 {
-    public Vector3 GetBreathPosition()
+    public Vector3 GetBreathPosition(Camera camera)
     {
         return RootCameraRigManager.Instance.Head.transform.position;
     }

@@ -93,10 +93,10 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _DrawRad: 5
+    - _DrawRad: 0
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _FrostRad: 0
+    - _FrostRad: 30
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -115,9 +115,9 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DrawUV: {r: 0.50078964, g: 0.57771015, b: 0, a: 0}
+    - _DrawUV: {r: 0.388074, g: 0.1837503, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FrostUV: {r: 0.44361264, g: 0.54954135, b: 0, a: 0}
+    - _FrostUV: {r: 0.40995902, g: 0.47125024, b: 0, a: 0}
     - _PaintUV: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_BuildTextureStacks: []

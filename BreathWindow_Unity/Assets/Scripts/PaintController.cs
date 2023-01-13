@@ -55,11 +55,13 @@ public class PaintController : MonoBehaviour
     {
         if (_inputProvider.GetIsBreathing())
         {
-            Ray ray = new Ray(_inputProvider.GetBreathPosition(), _inputProvider.GetHeadDirection());
+            Ray ray = new Ray(_inputProvider.GetBreathPosition(_camera), _inputProvider.GetHeadDirection());
             RaycastHit hit;
+            Debug.Log("IsBreathing");
 
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
+                Debug.Log("IsFrosting");
                 Frost(hit);
             }
         }
@@ -67,7 +69,7 @@ public class PaintController : MonoBehaviour
         //これはタッチしたときのイベントを処理する感じにする
         if (Input.GetKey(KeyCode.A))
         {
-            Ray ray = new Ray(_inputProvider.GetBreathPosition(), _inputProvider.GetHeadDirection());
+            Ray ray = new Ray(_inputProvider.GetBreathPosition(_camera), _inputProvider.GetHeadDirection());
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, 100.0f))

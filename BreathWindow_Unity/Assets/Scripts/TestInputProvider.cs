@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class TestInputProvider : IInputProvider
 {
-    public Vector3 GetBreathPosition()
+    public Vector3 GetBreathPosition(Camera camera)
     {
-        return Input.mousePosition;
+        return camera.ScreenToWorldPoint(Input.mousePosition);
     }
 
     public bool GetIsBreathing()
